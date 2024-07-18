@@ -13,7 +13,7 @@ ul{
 a{
     text-decoration: none;
 }
-.background-container {
+.bg-image{
     background: url('./assets/images/background.png') no-repeat;
     background-size: cover;
     background-position: 30%;
@@ -145,8 +145,8 @@ header ul{
     padding: 50px 30px;
     background-color: #8EC2F2;
     color: #fff;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
 }
 .features .header h5{
     font-size: 16px;
@@ -168,10 +168,19 @@ header ul{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.bg-card{
+    background-color: #d8e5f2;
+}
+.body-container{
+    height: 62%;
+}
 .features .body{
     padding: 30px 50px;
     border: 1px solid #A9D6FF;
     border-radius: 10px;
+    background-color: #fff;
+    height: 102%;
+    width: 100%;
 }
 .features .body ul li{
     font-size: 14px;
@@ -212,7 +221,6 @@ header ul{
 padding: 25px;
 border-radius: 9px;
 background-color: #fff;
-
 }
 .faq .card-item h5{
     font-size: 16px;
@@ -305,6 +313,7 @@ background-color: #fff;
     text-align: center;
     color: #737373;
 }
+
 .pricing .card-item ul {
     width: 90%;
 
@@ -416,11 +425,13 @@ footer .social a{
     .home-section{
         padding: 30px 195px !important;
     }
-    .background-container {
+    .bg-image {
         background: url('./assets/images/background.png') no-repeat center/cover;
         overflow: hidden;
         color: white;
     }
+}
+@media (min-width: 1027px) {
     .pricing .spical-card{
         height: auto;
         position: relative;
@@ -452,11 +463,11 @@ footer .social a{
     .home-section{
         padding: 30px 40px !important;
     }
-    .background-container {
+    .bg-image {
         background: url('./assets/images/background.png') no-repeat;
         background-size: cover;
         background-position: 30%;
         overflow: hidden;
         color: white;
-    }
+    }   
 }
